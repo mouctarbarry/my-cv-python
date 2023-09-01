@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>CV de Mouctar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@100;300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+    <link rel="icon" href="{{ url_for('static', filename='images/cv.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#myNavbar">
+
+<nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="nav-link navbar-nav active" aria-current="page" href="#about">Profil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="#skills">Compétences</a>
+                <a class="nav-link" href="#experience">Expériences</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="about" class="container-fluid">
+    <div class="col-8 profile-picture" >
+        <img src="{{ url_for('static', filename='images/moii.jpg') }}" alt="Photo de profile" class="rounded-circle">
+    </div>
+    <div class="heading">
+        <h1 ><span class="format-pres" id="aboutP"></span></h1>
+        <h3 class="format-pres" id="aboutW"></h3>
+        <a href="src/docs/#" class="bi-download btn btn-outline-secondary">  Download CV</a>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="divider"> </div>
+    <div class="heading">
+        <h2>Compétences</h2>
+        <h3>Langages, frameworks et autres outils</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 skill-item">
+                <h5>Git</h5>
+                <img src="https://skillicons.dev/icons?i=git" alt="Git">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>JavaScript</h5>
+                <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>React</h5>
+                <img src="https://skillicons.dev/icons?i=react" alt="react">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Angular</h5>
+                <img src="https://skillicons.dev/icons?i=angular" alt="angular">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>NodeJS</h5>
+                <img src="https://skillicons.dev/icons?i=nodejs" alt="nodejs">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>JQuery</h5>
+                <img src="https://skillicons.dev/icons?i=jquery" alt="jquery">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 skill-item">
+                <h5>Python</h5>
+                <img src="https://skillicons.dev/icons?i=py" alt="py">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Django</h5>
+                <img src="https://skillicons.dev/icons?i=django&theme=light" alt="django">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Flask</h5>
+                <img src="https://skillicons.dev/icons?i=flask" alt="flask">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Java</h5>
+                <img src="https://skillicons.dev/icons?i=java" alt="java">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>spring</h5>
+                <img src="https://skillicons.dev/icons?i=spring&theme=light" alt="spring">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Selenium</h5>
+                <img src="https://skillicons.dev/icons?i=selenium" alt="selenium">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 skill-item">
+                <h5>Kubernetes</h5>
+                <img src="https://skillicons.dev/icons?i=kubernetes" alt="kubernetes">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Docker</h5>
+                    <img src="https://skillicons.dev/icons?i=docker" alt="docker">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Jenkins</h5>
+                <img src="https://skillicons.dev/icons?i=jenkins" alt="jenkins">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Azure</h5>
+                <img src="https://skillicons.dev/icons?i=azure" alt="azure">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>AWS</h5>
+                <img src="https://skillicons.dev/icons?i=aws" alt="aws">
+            </div>
+            <div class="col-md-2 skill-item">
+                <h5>Bootstrap</h5>
+                <img src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="divider white"> </div>
+    <div class="heading">
+        <h2>Expériences professionnelles</h2>
+    </div>
+    <ul class="timeline">
+        <li>
+            <div class="timeline-badge"><span class="bi bi-briefcase-fill"></span></div>
+            <div class="timeline-panel-container-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h3 class="bi bi-buildings"> Freelance</h3>
+                        <h4 class="bi bi-person-workspace"> DevOps</h4>
+                        <p class="text-muted"><span class="bi-clock-fill"></span>Depuis 2023</p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Conception et conteneurisation de projets</p>
+                        <p>CD/CI, Dockerisation</p>
+                        <p>Accompagnement projets web</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="timeline-badge"><span class="bi bi-briefcase-fill"></span></div>
+            <div class="timeline-panel-container">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h3 class="bi bi-buildings"> Capgemini</h3>
+                        <h4 class="bi bi-person-workspace"> Développeur full-stack</h4>
+                        <p class="text-muted"><span class="bi-clock-fill"></span>2023-2024</p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Conception, suivi et maintenance de divers projets web</p>
+                        <p>Gestion de pipeline d'automatisation CD/CI</p>
+                        <p>Formation de développeurs junior</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-badge"><span class="bi bi-briefcase-fill"></span></div>
+            <div class="timeline-panel-container-inverted">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h3 class="bi bi-buildings"> En freelance</h3>
+                        <h4 class="bi bi-person-workspace"> Développeur Web</h4>
+                        <p class="text-muted"><span class="bi-clock-fill"></span> 2020-2023</p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Accompagner des clients dans la mise en place<br>
+                            et la maintenance de leurs projets web</p>
+                        <p>Développement de solutions </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-badge"><span class="bi bi-briefcase-fill"></span></div>
+            <div class="timeline-panel-container">
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h3 class="bi bi-buildings"> UVSQ Versailles</h3>
+                        <h4 class="bi bi-person-workspace"> Développeur Web Junior</h4>
+                        <p class="text-muted"><span class="bi-clock-fill"></span> 2015-2020</p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Réalisation de projets personnels (Site E-Commerce) en annexe à mes études.<br>Disponible sur mon
+                            <a href="https://github.com/mouctarbarry" style="text-decoration:none" target="_blank"> github
+                                <span class="bi-github"></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section id="education">
+    <div class="container">
+        <div class="divider"> </div>
+        <div class="heading">
+            <h2>Education</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="education-block">
+                    <h5>2018-2021</h5>
+                    <span class="bi-award-fill"></span>
+                    <h3>Université de Versailles</h3>
+                    <h4>Licence informatique</h4>
+                    <div class="divider"></div>
+                    <p>Systèmes d'information</p>
+                    <p>Mathématiques</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="education-block">
+                    <h5>2021-2023</h5>
+                    <span class="bi-award-fill"></span>
+                    <h3>Université Paris Saclay</h3>
+                    <h4>Master ingénierie systèmes et réseaux</h4>
+                    <div class="divider"></div>
+                    <p>Systèmes d'information et réseaux</p>
+                    <p>Solutions DevOps en alternance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <div class="divider "> </div>
+        <div class="heading">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#about">
+                    <img src="{{ url_for('static', filename='images/cv.png')}}" class="img-thumbnail" alt="CV">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://snake.mouctar.fr" target="_blank">
+                    <img src="{{ url_for('static', filename='images/snakeG.png')}}" class="img-thumbnail" alt="facebook">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://travel.mouctar.fr/" target="_blank">
+                    <img src="{{ url_for('static', filename='images/avion.png')}}" class="img-thumbnail" alt="Travel agency">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="{{ url_for('static', filename='images/facebook.png')}}" class="img-thumbnail" alt="facebook">
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="{{ url_for('static', filename='images/facebook.png')}}" class="img-thumbnail" alt="facebook">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="{{ url_for('static', filename='images/facebook.png')}}" class="img-thumbnail" alt="facebook">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="container">
+        <div class="divider"></div>
+        <div class="heading">
+            <h2>Contactez-moi</h2>
+        </div>
+        <form id="contact-form" method="post" action="" role="form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="firstname" class="form-label">Prénom <span class="blue">*</span></label>
+                    <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                    <p class="comments"></p>
+                </div>
+                <div class="col-lg-6">
+                    <label for="name" class="form-label">Nom <span class="blue">*</span></label>
+                    <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                    <p class="comments"></p>
+                </div>
+                <div class="col-lg-6">
+                    <label for="email" class="form-label">Email <span class="blue">*</span></label>
+                    <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                    <p class="comments"></p>
+                </div>
+                <div class="col-lg-6">
+                    <label for="phone" class="form-label">Téléphone</label>
+                    <input id="phone" type="text" name="phone" class="form-control" placeholder="Votre Téléphone">
+                </div>
+                <div>
+                    <label for="message" class="form-label">Message <span class="blue">*</span></label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="7" style="height: 120px"></textarea>
+                    <p class="comments"></p>
+                </div>
+                <div>
+                    <p class="blue"><strong>* Ces informations sont requises.</strong></p>
+                </div>
+                <div>
+                    <input type="submit" class="button1" value="Envoyer">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<footer class="text-center">
+    <a href="#about"><span class="bi-chevron-up"></span></a>
+    <h5>© MOUCTAR DEVOPSPHERE</h5>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
