@@ -319,7 +319,7 @@ h2 {
     font-size: 18px;
 }
 #contact-form input[type=submit] {
-    margin: 40px auto 0;
+    margin: auto 0;
     display: block;
 }
 .comments {
@@ -341,13 +341,22 @@ h2 {
     width: 100%;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 18px;
+    padding: 10px;
     border-radius: 15px;
     transition: all 0.3s ease-in 0s;
 }
 .button1:hover {
     background: #333;
     border-color: #ffa500;
+}
+
+.coord{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 80px;
+    text-align: center;
+    background-color: #cccccc;
+    border-radius: 20px;
 }
 
 .format-pres{
