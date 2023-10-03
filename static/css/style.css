@@ -254,8 +254,8 @@ ul{
     background-color: white;
 }
 #portfolio img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 }
 #portfolio img:hover {
     filter: none;
