@@ -6,6 +6,6 @@ werkzeug~=2.3.7
 click~=8.1.7
 blinker~=1.6.2
 itsdangerous~=2.1.2
-setuptools~=65.5.1
+setuptools~=70.0.0
 flask~=2.3.3
 gunicorn>=21.2,<22.0
